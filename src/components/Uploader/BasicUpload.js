@@ -102,7 +102,7 @@ export default class Uploader extends Component {
   getImage = (e) => {
     this.setState({ imgfile: URL.createObjectURL(e.target.files[0]) })
     if (!this.validFileType(e.target.files[0])) {
-      this.setState({ ok: false, message: 'not a valid file type or size is greater than 10mb' })
+      this.setState({ ok: false, message: 'not a valid file type or size is greater than 10MB' })
     }
     else {
       this.setState({ file: e.target.files[0], button: false })
